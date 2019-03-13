@@ -1,0 +1,279 @@
+{
+  "AccessRegulation": {
+    "ClosureCriteria": [
+      "Type" : "string"
+    ],
+    "ClosureSetId": 0,
+    "SignedDate": "This is a date of the form",
+    "ReviewDate": "This is a date of the form",
+    "ReconsiderDueInDate": "This is a date of the form",
+    "LordChancellorsInstrument": "string",
+    "Explanation": "string",
+    "ProcatTitleText": "string"
+  },
+  "Accruals": "string",
+  "AccumulationDates": "string",
+  "AdministrativeBackground": "string",
+  "AppraisalInformation": "string",
+  "Arrangement": "string",
+  "BatchId": "string",
+  "CopiesInformation": [
+    {
+      "Description": "string",
+      "EndDate": 0,
+      "FirstName": "string",
+      "PreTitle": "string",
+      "StartDate": 0,
+      "Surname": "string",
+      "Title": "string",
+      "XReferenceId": "string",
+      "XReferenceCode": "string",
+      "XReferenceName": "string",
+      "XReferenceType": "string",
+      "XReferenceURL": "string",
+      "XReferenceDescription": "string",
+      "XReferenceSortWord": "string"
+    }
+  ],
+  "CorporateNames": [
+    {
+      "Description": "string",
+      "EndDate": 0,
+      "FirstName": "string",
+      "PreTitle": "string",
+      "StartDate": 0,
+      "Surname": "string",
+      "Title": "string",
+      "XReferenceId": "string",
+      "XReferenceCode": "string",
+      "XReferenceName": "string",
+      "XReferenceType": "string",
+      "XReferenceURL": "string",
+      "XReferenceDescription": "string",
+      "XReferenceSortWord": "string"
+    }
+  ],
+  "CreatorName": [
+    {
+      "Description": "string",
+      "EndDate": 0,
+      "FirstName": "string",
+      "PreTitle": "string",
+      "StartDate": 0,
+      "Surname": "string",
+      "Title": "string",
+      "XReferenceId": "string",
+      "XReferenceCode": "string",
+      "XReferenceName": "string",
+      "XReferenceType": "string",
+      "XReferenceURL": "string",
+      "XReferenceDescription": "string",
+      "XReferenceSortWord": "string"
+    }
+  ],
+  "CustodialHistory": "string",
+  "DetailedRelatedMaterial": [
+    {
+      "Description": "string",
+      "EndDate": 0,
+      "FirstName": "string",
+      "PreTitle": "string",
+      "StartDate": 0,
+      "Surname": "string",
+      "Title": "string",
+      "XReferenceId": "string",
+      "XReferenceCode": "string",
+      "XReferenceName": "string",
+      "XReferenceType": "string",
+      "XReferenceURL": "string",
+      "XReferenceDescription": "string",
+      "XReferenceSortWord": "string"
+    }
+  ],
+  "DetailedSeparatedMaterial": [
+    {
+      "Description": "string",
+      "EndDate": 0,
+      "FirstName": "string",
+      "PreTitle": "string",
+      "StartDate": 0,
+      "Surname": "string",
+      "Title": "string",
+      "XReferenceId": "string",
+      "XReferenceCode": "string",
+      "XReferenceName": "string",
+      "XReferenceType": "string",
+      "XReferenceURL": "string",
+      "XReferenceDescription": "string",
+      "XReferenceSortWord": "string"
+    }
+  ],
+  "Dimensions": "string",
+  "FormerReferenceDep": "string",
+  "FormerReferencePro": "string",
+  "ImmediateSourceOfAcquisition": [
+    {
+      "Description": "string",
+      "EndDate": 0,
+      "FirstName": "string",
+      "PreTitle": "string",
+      "StartDate": 0,
+      "Surname": "string",
+      "Title": "string",
+      "XReferenceId": "string",
+      "XReferenceCode": "string",
+      "XReferenceName": "string",
+      "XReferenceType": "string",
+      "XReferenceURL": "string",
+      "XReferenceDescription": "string",
+      "XReferenceSortWord": "string"
+    }
+  ],
+  "Language": "string",
+  "LegalStatus": "string",
+  "Links": [
+    {
+      "XReferenceId": "string",
+      "XReferenceCode": "string",
+      "XReferenceName": "string",
+      "XReferenceType": "string",
+      "XReferenceURL": "string",
+      "XReferenceDescription": "string",
+      "XReferenceSortWord": "string"
+    }
+  ],
+  "LocationOfOriginals": [
+    {
+      "Description": "string",
+      "EndDate": 0,
+      "FirstName": "string",
+      "PreTitle": "string",
+      "StartDate": 0,
+      "Surname": "string",
+      "Title": "string",
+      "XReferenceId": "string",
+      "XReferenceCode": "string",
+      "XReferenceName": "string",
+      "XReferenceType": "string",
+      "XReferenceURL": "string",
+      "XReferenceDescription": "string",
+      "XReferenceSortWord": "string"
+    }
+  ],
+  "MapDesignation": "string",
+  "MapScaleNumber": 0,
+  "Note": "string",
+  "OtherReferences": [
+    {
+      "Key": "NRA_CATALOGUE",
+      "Value": "string"
+    }
+  ],
+  "People": [
+    {
+      "Description": "string",
+      "EndDate": 0,
+      "FirstName": "string",
+      "PreTitle": "string",
+      "StartDate": 0,
+      "Surname": "string",
+      "Title": "string",
+      "XReferenceId": "string",
+      "XReferenceCode": "string",
+      "XReferenceName": "string",
+      "XReferenceType": "string",
+      "XReferenceURL": "string",
+      "XReferenceDescription": "string",
+      "XReferenceSortWord": "string"
+    }
+  ],
+  "PhysicalCondition": "string",
+  "PhysicalDescriptionExtent": "string",
+  "PhysicalDescriptionForm": "string",
+  "Places": [
+    {
+      "Country": "string",
+      "CountryID": 0,
+      "County": "string",
+      "CountyID": 0,
+      "Description": "string",
+      "DisplayName": "string",
+      "EndDate": 0,
+      "Grid": "string",
+      "LocationType": "string",
+      "NewCounty": "string",
+      "NewCountyID": 0,
+      "OldCounty": "string",
+      "OldCountyID": 0,
+      "Parish": "string",
+      "PlaceName": "string",
+      "Region": "string",
+      "RegionID": 0,
+      "StartDate": 0,
+      "Town": "string",
+      "TownID": 0,
+      "Validation": "string"
+    }
+  ],
+  "PublicationNote": [
+    "string"
+  ],
+  "RegistryUrl": "string",
+  "RestrictionsOnUse": "string",
+  "ScannedLists": [
+    {
+      "XReferenceId": "string",
+      "XReferenceCode": "string",
+      "XReferenceName": "string",
+      "XReferenceType": "string",
+      "XReferenceURL": "string",
+      "XReferenceDescription": "string",
+      "XReferenceSortWord": "string"
+    }
+  ],
+  "Subjects": [
+    "string"
+  ],
+  "UnpublishedFindingAids": [
+    "string"
+  ],
+  "AccessConditions": "string",
+  "CatalogueId": 0,
+  "CitableReference": "string",
+  "ClosureCode": "string",
+  "ClosureStatus": "string",
+  "ClosureType": "string",
+  "CoveringDates": "string",
+  "CoveringFromDate": 0,
+  "CoveringToDate": 0,
+  "ScopeContent": {
+    "PlaceNames": [
+      "string"
+    ],
+    "Description": "string",
+    "Ephemera": "string",
+    "Schema": "string"
+  },
+  "Digitised": true,
+  "HeldBy": [
+    {
+      "XReferenceId": "string",
+      "XReferenceCode": "string",
+      "XReferenceName": "string",
+      "XReferenceType": "string",
+      "XReferenceURL": "string",
+      "XReferenceDescription": "string",
+      "XReferenceSortWord": "string"
+    }
+  ],
+  "Id": "string",
+  "IsParent": true,
+  "CatalogueLevel": 0,
+  "ParentId": "string",
+  "RecordOpeningDate": "string",
+  "ReferencePart": "string",
+  "ReferenceParentId": "string",
+  "SortKey": "string",
+  "Source": "string",
+  "Title": "string"
+}

@@ -32,8 +32,9 @@ class ScopeContentViewModel:
 class InformationAssetIdentityViewModel:
 """  class represents and manipulates a Discovery API subtype """
     _count=0 
-    def __init__(self):
+    def __init__(self, name):
         _count += 1
+        self.name: str = name
         self.AccessConditions: str = ""
         self.CatalogueId: int  = 0
         self.CitableReference: str = ""
@@ -43,9 +44,9 @@ class InformationAssetIdentityViewModel:
         self.CoveringDates: str = ""
         self.CoveringFromDate: int = 0
         self.CoveringToDate: int = 0
-        self.ScopeContent: ScopeContentViewModel = nil
+        self.ScopeContent: ScopeContentViewModel = None
         self.Digitised: boolean = False
-        self.HeldBy=[] # Collection of XReferenceViewModel
+        self.HeldBy=[] # List (Collection)of XReferenceViewModel
         self.Id: str = ""
         self.IsParent: boolean = False
         self.CatalogueLevel: int = 0
@@ -57,7 +58,12 @@ class InformationAssetIdentityViewModel:
         self.Source: str = ""
         self.Title: str = ""
 
-    def fromJSON(jsonstr):
-        #jsonstr.
+    def initfromJSON(jsonstr):
 
+        for i in jsonstr["assets"]
+            
+
+        jsonstr.
+
+        self.
 
