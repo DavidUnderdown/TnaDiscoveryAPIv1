@@ -40,3 +40,6 @@ if isParent:
     assert isinstance(children_query_url, furl.furl)
     r2 = s.get(url=children_query_url)
     pprint.pprint(r2.json())
+
+    toplevobj :InformationAssetIdentityViewModel = InformationAssetIdentityViewModel(r2.json())
+
