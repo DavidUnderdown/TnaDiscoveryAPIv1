@@ -1,0 +1,426 @@
+{
+  "definitions": {},
+  "$schema": "",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "GET Asset Collection Schema",
+  "readOnly": true,
+  "properties": {
+    "Assets": {
+      "$id": "#/properties/Assets",
+      "type": "array",
+      "title": "View Assets Schema",
+      "default": null,
+      "readOnly": true,
+      "items": {
+        "$id": "#/properties/Assets/items",
+        "type": "object",
+        "title": "Information Asset Schema",
+        "readOnly": true,
+        "required": [
+          "AccessConditions",
+          "CatalogueId",
+          "CitableReference",
+          "ClosureCode",
+          "ClosureStatus",
+          "ClosureType",
+          "CoveringDates",
+          "CoveringFromDate",
+          "CoveringToDate",
+          "ScopeContent",
+          "Digitised",
+          "HeldBy",
+          "Id",
+          "IsParent",
+          "CatalogueLevel",
+          "ParentId",
+          "RecordOpeningDate",
+          "ReferencePart",
+          "ReferenceParentId",
+          "SortKey",
+          "Source",
+          "Title"
+        ],
+        "properties": {
+          "AccessConditions": {
+            "$id": "#/properties/Assets/items/properties/AccessConditions",
+            "type": [
+              "string",
+              "null"
+            ],
+            "title": "The Accessconditions Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "CatalogueId": {
+            "$id": "#/properties/Assets/items/properties/CatalogueId",
+            "type": "integer",
+            "title": "CatalogueId",
+            "description": "Internal index reference for asset in catalogue database",
+            "examples": [
+              9247071
+            ],
+            "readOnly": true,
+            "exclusiveMinimum": 0.0
+          },
+          "CitableReference": {
+            "$id": "#/properties/Assets/items/properties/CitableReference",
+            "type": "string",
+            "title": "Citable Reference",
+            "description": "The catalogue reference usually used by scholars to refer to this asset in the catalogue",
+            "examples": [
+              "ADM 363/1"
+            ],
+            "readOnly": true,
+            "pattern": "^(.*)$",
+            "format": "regex"
+          },
+          "ClosureCode": {
+            "$id": "#/properties/Assets/items/properties/ClosureCode",
+            "type": "string",
+            "enum": [
+              "O",
+              "C",
+              "D"
+            ],
+            "title": "Closure Code",
+            "description": "Code that indicates if the record is open, closed, or closed and with closed metadata",
+            "examples": [
+              "O"
+            ],
+            "readOnly": true
+          },
+          "ClosureStatus": {
+            "$id": "#/properties/Assets/items/properties/ClosureStatus",
+            "type": "string",
+            "title": "The Closurestatus Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ClosureType": {
+            "$id": "#/properties/Assets/items/properties/ClosureType",
+            "type": "string",
+            "title": "The Closuretype Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "CoveringDates": {
+            "$id": "#/properties/Assets/items/properties/CoveringDates",
+            "type": "string",
+            "title": "The Coveringdates Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "CoveringFromDate": {
+            "$id": "#/properties/Assets/items/properties/CoveringFromDate",
+            "type": "integer",
+            "title": "The Coveringfromdate Schema",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "CoveringToDate": {
+            "$id": "#/properties/Assets/items/properties/CoveringToDate",
+            "type": "integer",
+            "title": "The Coveringtodate Schema",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "ScopeContent": {
+            "$id": "#/properties/Assets/items/properties/ScopeContent",
+            "type": "object",
+            "title": "The Scopecontent Schema",
+            "required": [
+              "PlaceNames",
+              "Description",
+              "Ephemera",
+              "Schema"
+            ],
+            "properties": {
+              "PlaceNames": {
+                "$id": "#/properties/Assets/items/properties/ScopeContent/properties/PlaceNames",
+                "type": "array",
+                "title": "The Placenames Schema",
+                "items": {
+                  "$id": "#/properties/Assets/items/properties/ScopeContent/properties/PlaceNames/items",
+                  "type": "string",
+                  "title": "The Items Schema",
+                  "default": "",
+                  "examples": [
+                    "string"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              },
+              "Description": {
+                "$id": "#/properties/Assets/items/properties/ScopeContent/properties/Description",
+                "type": "string",
+                "title": "The Description Schema",
+                "default": "",
+                "examples": [
+                  "string"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "Ephemera": {
+                "$id": "#/properties/Assets/items/properties/ScopeContent/properties/Ephemera",
+                "type": "string",
+                "title": "The Ephemera Schema",
+                "default": "",
+                "examples": [
+                  "string"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "Schema": {
+                "$id": "#/properties/Assets/items/properties/ScopeContent/properties/Schema",
+                "type": "string",
+                "title": "The Schema Schema",
+                "default": "",
+                "examples": [
+                  "string"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          },
+          "Digitised": {
+            "$id": "#/properties/Assets/items/properties/Digitised",
+            "type": "boolean",
+            "title": "The Digitised Schema",
+            "default": false,
+            "examples": [
+              true
+            ]
+          },
+          "HeldBy": {
+            "$id": "#/properties/Assets/items/properties/HeldBy",
+            "type": "array",
+            "title": "The Heldby Schema",
+            "items": {
+              "$id": "#/properties/Assets/items/properties/HeldBy/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "XReferenceId",
+                "XReferenceCode",
+                "XReferenceName",
+                "XReferenceType",
+                "XReferenceURL",
+                "XReferenceDescription",
+                "XReferenceSortWord"
+              ],
+              "properties": {
+                "XReferenceId": {
+                  "$id": "#/properties/Assets/items/properties/HeldBy/items/properties/XReferenceId",
+                  "type": "string",
+                  "title": "The Xreferenceid Schema",
+                  "default": "",
+                  "examples": [
+                    "string"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "XReferenceCode": {
+                  "$id": "#/properties/Assets/items/properties/HeldBy/items/properties/XReferenceCode",
+                  "type": "string",
+                  "title": "The Xreferencecode Schema",
+                  "default": "",
+                  "examples": [
+                    "string"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "XReferenceName": {
+                  "$id": "#/properties/Assets/items/properties/HeldBy/items/properties/XReferenceName",
+                  "type": "string",
+                  "title": "The Xreferencename Schema",
+                  "default": "",
+                  "examples": [
+                    "string"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "XReferenceType": {
+                  "$id": "#/properties/Assets/items/properties/HeldBy/items/properties/XReferenceType",
+                  "type": "string",
+                  "title": "The Xreferencetype Schema",
+                  "default": "",
+                  "examples": [
+                    "string"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "XReferenceURL": {
+                  "$id": "#/properties/Assets/items/properties/HeldBy/items/properties/XReferenceURL",
+                  "type": "string",
+                  "title": "The Xreferenceurl Schema",
+                  "default": "",
+                  "examples": [
+                    "string"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "XReferenceDescription": {
+                  "$id": "#/properties/Assets/items/properties/HeldBy/items/properties/XReferenceDescription",
+                  "type": "string",
+                  "title": "The Xreferencedescription Schema",
+                  "default": "",
+                  "examples": [
+                    "string"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "XReferenceSortWord": {
+                  "$id": "#/properties/Assets/items/properties/HeldBy/items/properties/XReferenceSortWord",
+                  "type": "string",
+                  "title": "The Xreferencesortword Schema",
+                  "default": "",
+                  "examples": [
+                    "string"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          },
+          "Id": {
+            "$id": "#/properties/Assets/items/properties/Id",
+            "type": "string",
+            "title": "The Id Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "IsParent": {
+            "$id": "#/properties/Assets/items/properties/IsParent",
+            "type": "boolean",
+            "title": "The Isparent Schema",
+            "default": false,
+            "examples": [
+              true
+            ]
+          },
+          "CatalogueLevel": {
+            "$id": "#/properties/Assets/items/properties/CatalogueLevel",
+            "type": "integer",
+            "title": "The Cataloguelevel Schema",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "ParentId": {
+            "$id": "#/properties/Assets/items/properties/ParentId",
+            "type": "string",
+            "title": "The Parentid Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "RecordOpeningDate": {
+            "$id": "#/properties/Assets/items/properties/RecordOpeningDate",
+            "type": "string",
+            "title": "The Recordopeningdate Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ReferencePart": {
+            "$id": "#/properties/Assets/items/properties/ReferencePart",
+            "type": "string",
+            "title": "The Referencepart Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ReferenceParentId": {
+            "$id": "#/properties/Assets/items/properties/ReferenceParentId",
+            "type": "string",
+            "title": "The Referenceparentid Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "SortKey": {
+            "$id": "#/properties/Assets/items/properties/SortKey",
+            "type": "string",
+            "title": "The Sortkey Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Source": {
+            "$id": "#/properties/Assets/items/properties/Source",
+            "type": "string",
+            "title": "The Source Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Title": {
+            "$id": "#/properties/Assets/items/properties/Title",
+            "type": "string",
+            "title": "The Title Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    },
+    "HasMoreAfterLast": {
+      "$id": "#/properties/HasMoreAfterLast",
+      "type": "boolean",
+      "title": "The Hasmoreafterlast Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "HasMoreBeforeFirst": {
+      "$id": "#/properties/HasMoreBeforeFirst",
+      "type": "boolean",
+      "title": "The Hasmorebeforefirst Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
+    }
+  },
+  "required": [
+    "HasMoreAfterLast",
+    "HasMoreBeforeFirst"
+  ]
+}
